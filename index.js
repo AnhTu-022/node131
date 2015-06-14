@@ -1,5 +1,7 @@
 var express = require('express');
-var app = express();
+var app = express(),
+	http = require('http'),
+	io = require('socket.io').listen(server, {log: false});
 
 
 app.set('port', (process.env.PORT || 5000));
